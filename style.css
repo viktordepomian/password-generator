@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: #161622;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#password-output{
+    background: #c2c2c2;
+    margin: 1rem 0;
+    padding: .5rem 1.3rem;
+    font-size: 2rem;
+}
+
+.password-form-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.password-form-container .pass-length{
+    display: flex;
+    flex-direction: column;
+}
+
+.password-form-container .pass-length .title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.password-form-container .checkbox-alternatives{
+    display: flex;
+    flex-direction: column;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <main id="main">
+        <h1>Password Generator</h1>
+        <div id="password-output">00000</div>
+        <div class="password-form-container">
+            <div class="pass-length">
+                <div class="title">
+                    <label for="password-length-label">Character Length</label>
+                    <span class="length-in-numbers">3</span>
+                </div>
+                <input type="range" min="3" max="10" value="3" id="password-length">
+            </div>
+            <div class="checkbox-alternatives">
+                <div class="uppercase-box">
+                    <input type="checkbox" name="uppercase" id="uppercase">
+                    <label for="uppercase">Include Uppercase Letters</label>
+                </div>
+                <div class="lowercase-box">
+                    <input type="checkbox" name="lowercase" id="lowercase">
+                    <label for="lowercase">Include Lowercase Letters</label>
+                </div>
+                <div class="numbers-box">
+                    <input type="checkbox" name="numbers" id="numbers">
+                    <label for="numbers">Include Numbers</label>
+                </div>
+                <div class="symbols-box">
+                    <input type="checkbox" name="symbols" id="symbols">
+                    <label for="symbols">Include Symbols</label>
+                </div>
+            </div>
+            <div class="strength-container">
+                <p>Strength</p>
+            </div>
+            <button id="gen-password">Generate Password</button>
+        </div>
+        
+    </main>
+</body>
+</html>
